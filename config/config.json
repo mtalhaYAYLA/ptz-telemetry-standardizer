@@ -1,0 +1,193 @@
+{
+  "_comment": "Bu bir yapılandırma dosyasıdır. Kameraları ve ayarlarını buradan yönetin.",
+  "cameras": [
+    {
+      "_comment": "Bu bölüm, sistemdeki ilk kameranın ayarlarını içerir. Kopyalayarak yeni kameralar ekleyebilirsiniz.",
+      "name": "Kamera-1_Depo",
+      "camera_id": 26,
+      "ip_address": "192.168.146.227",
+      "credentials": {
+        "user": "admin",
+        "pass": "Eren.2012"
+      },
+      "scan_parameters": {
+        "_comment_scan": "Kameranın hangi açılar arasında gezineceğini ve hızını belirler.",
+        "pan_start_deg": 240,
+        "pan_end_deg": 60,
+        "pan_start_Ydeg": 5,
+        "pan_end_Ydeg": 75,
+        "step_Ydeg": 10,
+        "tilt_fixed_deg": 0,
+        "step_deg": 10,
+        "wait_sec": 3,
+        "scan_control_key": "global.hidden.termal.scan.termal1",
+        "post_move_delay_sec": 6.0 
+      },
+      "alarm_settings": {
+        "_comment_alarm": "Alarm koşullarını ve alarm sonrası bekleme süresini belirler.",
+        "threshold_c": 20.0,
+        "cooldown_sec": 30,
+
+        "smart_filtering": {
+        "_comment": "Akıllı anomali filtreleme sistemi - Buffer tabanlı kayıt mekanizması",
+        "enabled": true,
+        
+        "_comment_buffer": "Geçici hafıza (buffer) ayarları",
+        "buffer_duration_sec": 60,
+        "buffer_max_count": 10,
+        "buffer_min_count": 3,
+        "selection_method": "median",
+        "priority_ids": [9],
+        "pause_duration_sec": 60,
+        
+        "_comment_positional": "Pozisyon bazlı doğrulama (dozer/iş makinesi filtresi) - İsteğe bağlı",
+        "use_positional_check": false,
+        "confirmation_period_sec": 8,
+        "confirmation_buffer_size": 3,
+        "positional_tolerance": 0.05
+        }
+      }
+    },
+    {
+      "_comment": "Bu bölüm, sistemdeki ilk kameranın ayarlarını içerir. Kopyalayarak yeni kameralar ekleyebilirsiniz.",
+      "name": "Kamera-2_Depo",
+      "camera_id": 27,
+      "ip_address": "192.168.146.228",
+      "credentials": {
+        "user": "admin",
+        "pass": "Eren.2012"
+      },
+      "scan_parameters": {
+        "_comment_scan": "Kameranın hangi açılar arasında gezineceğini ve hızını belirler.",
+        "pan_start_deg": 45,
+        "pan_end_deg": 215,
+        "pan_start_Ydeg": 5,
+        "pan_end_Ydeg": 85,
+        "step_Ydeg": 10,
+        "tilt_fixed_deg": 0,
+        "step_deg": 10,
+        "wait_sec": 3,
+        "scan_control_key": "global.hidden.termal.scan.termal2",
+        "post_move_delay_sec": 6.0 
+      },
+      "alarm_settings": {
+        "_comment_alarm": "Alarm koşullarını ve alarm sonrası bekleme süresini belirler.",
+        "threshold_c": 20.0,
+        "cooldown_sec": 30,
+
+        "smart_filtering": {
+        "_comment": "Akıllı anomali filtreleme sistemi - Buffer tabanlı kayıt mekanizması",
+        "enabled": true,
+        
+        "_comment_buffer": "Geçici hafıza (buffer) ayarları",
+        "buffer_duration_sec": 60,
+        "buffer_max_count": 10,
+        "buffer_min_count": 3,
+        "selection_method": "median",
+        "priority_ids": [9,8],
+        "pause_duration_sec": 60,
+        
+        "_comment_positional": "Pozisyon bazlı doğrulama (dozer/iş makinesi filtresi) - İsteğe bağlı",
+        "use_positional_check": false,
+        "confirmation_period_sec": 8,
+        "confirmation_buffer_size": 3,
+        "positional_tolerance": 0.05
+        }
+      }
+    },
+    {
+      "_comment": "Bu bölüm, sistemdeki ilk kameranın ayarlarını içerir. Kopyalayarak yeni kameralar ekleyebilirsiniz.",
+      "name": "Kamera-3_Depo",
+      "camera_id": 28,
+      "ip_address": "192.168.146.229",
+      "credentials": {
+        "user": "admin",
+        "pass": "Eren.2012"
+      },
+      "scan_parameters": {
+        "_comment_scan": "Kameranın hangi açılar arasında gezineceğini ve hızını belirler.",
+        "pan_start_deg": 212,
+        "pan_end_deg": 27,
+        "pan_start_Ydeg": 7,
+        "pan_end_Ydeg": 77,
+        "step_Ydeg": 10,
+        "tilt_fixed_deg": 0,
+        "step_deg": 10,
+        "wait_sec": 3,
+        "scan_control_key": "global.hidden.termal.scan.termal3",
+        "post_move_delay_sec": 6.0 
+      },
+      "alarm_settings": {
+        "_comment_alarm": "Alarm koşullarını ve alarm sonrası bekleme süresini belirler.",
+        "threshold_c": 20.0,
+        "cooldown_sec": 30,
+
+        "smart_filtering": {
+        "_comment": "Akıllı anomali filtreleme sistemi - Buffer tabanlı kayıt mekanizması",
+        "enabled": true,
+        
+        "_comment_buffer": "Geçici hafıza (buffer) ayarları",
+        "buffer_duration_sec": 60,
+        "buffer_max_count": 10,
+        "buffer_min_count": 3,
+        "selection_method": "median",
+        "priority_ids": [9],
+        "pause_duration_sec": 60,
+        
+        "_comment_positional": "Pozisyon bazlı doğrulama (dozer/iş makinesi filtresi) - İsteğe bağlı",
+        "use_positional_check": false,
+        "confirmation_period_sec": 8,
+        "confirmation_buffer_size": 3,
+        "positional_tolerance": 0.05
+        }
+      }
+    },
+    {
+      "_comment": "Bu bölüm, sistemdeki ilk kameranın ayarlarını içerir. Kopyalayarak yeni kameralar ekleyebilirsiniz.",
+      "name": "Kamera-4_Depo",
+      "camera_id": 29,
+      "ip_address": "192.168.146.230",
+      "credentials": {
+        "user": "admin",
+        "pass": "Eren.2012"
+      },
+      "scan_parameters": {
+        "_comment_scan": "Kameranın hangi açılar arasında gezineceğini ve hızını belirler.",
+        "pan_start_deg": 245,
+        "pan_end_deg": 60,
+        "pan_start_Ydeg": 10,
+        "pan_end_Ydeg": 90,
+        "step_Ydeg": 10,
+        "tilt_fixed_deg": 0,
+        "step_deg": 10,
+        "wait_sec": 3,
+        "scan_control_key": "global.hidden.termal.scan.termal4",
+        "post_move_delay_sec": 6.0 
+      },
+      "alarm_settings": {
+        "_comment_alarm": "Alarm koşullarını ve alarm sonrası bekleme süresini belirler.",
+        "threshold_c": 20.0,
+        "cooldown_sec": 30,
+
+        "smart_filtering": {
+        "_comment": "Akıllı anomali filtreleme sistemi - Buffer tabanlı kayıt mekanizması",
+        "enabled": true,
+        
+        "_comment_buffer": "Geçici hafıza (buffer) ayarları",
+        "buffer_duration_sec": 60,
+        "buffer_max_count": 10,
+        "buffer_min_count": 3,
+        "selection_method": "median",
+        "priority_ids": [9],
+        "pause_duration_sec": 60,
+        
+        "_comment_positional": "Pozisyon bazlı doğrulama (dozer/iş makinesi filtresi) - İsteğe bağlı",
+        "use_positional_check": false,
+        "confirmation_period_sec": 8,
+        "confirmation_buffer_size": 3,
+        "positional_tolerance": 0.05
+        }
+      }
+    }
+  ]
+}
