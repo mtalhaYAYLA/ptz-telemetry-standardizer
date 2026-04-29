@@ -8,10 +8,20 @@ from src.transformer import PTZTransformer
 from src.worker import TelemetryWorker
 
 def load_local_config():
-    # Dosya yolunu daha güvenli hale getirdik
+    """
+    config/config.json dosyasını okur ve Python sözlüğüne dönüştürür.
+
+    Returns:
+        dict: Kamera listesini ve tarama parametrelerini içeren yapılandırma.
+
+    Raises:
+        FileNotFoundError: config/config.json bulunamazsa.
+        json.JSONDecodeError: JSON formatı geçersizse.
+    """
     path = os.path.join('config', 'config.json')
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
+
 
 def main():
     print("=== EREN TERMAL PTZ MONITORING START ===")
@@ -50,7 +60,7 @@ def main():
             output = ""
             # HATA DÜZELTMESİ 3: active_workers ismi workers olarak düzeltildi
             for w in workers:
-                d = w.current_data
+                d = w.safe_data
                 output += f"| {w.client.name}: P:{d['pan']}° T:{d['tilt']}° "
             
             if output:
